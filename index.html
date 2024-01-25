@@ -126,7 +126,7 @@
         var inputEles = form.getElementsByTagName("input");
         for(let i=0;i<inputEles.length;i++){
             var ele = inputEles[i];
-            if(ele.required && ele.value.trim() == '' && ele.labels[0]){
+            if(ele.required &#038;&#038; ele.value.trim() == '' &#038;&#038; ele.labels[0]){
                 alert('Enter a valid '+ele.labels[0].textContent.slice(0, -1));
                 return;
             }
